@@ -87,7 +87,7 @@ scheduler:
 #############################
 
 sync-assets:
-	rsync -arPze ssh --delete --progress tomalo@typo3-dev2.rz.uni-hohenheim.de:/fileserver/files/webspace/htdocs/fileadmin app/htdocs/fileadmin
+	rsync -arPze ssh --delete --progress typo3-dev2.rz.uni-hohenheim.de:/fileserver/files/webspace/htdocs/fileadmin app/htdocs/fileadmin
 
 #############################
 # Argument fix workaround
