@@ -83,6 +83,13 @@ scheduler:
 	docker exec -it $$(docker-compose ps -q app) typo3/cli_dispatch.phpsh scheduler $(ARGS)
 
 #############################
+# UHOH
+#############################
+
+sync-assets:
+	rsync -arPze ssh --delete --progress tomalo@typo3-dev2.rz.uni-hohenheim.de:/fileserver/files/webspace/htdocs/fileadmin app/htdocs/fileadmin
+
+#############################
 # Argument fix workaround
 #############################
 %:
