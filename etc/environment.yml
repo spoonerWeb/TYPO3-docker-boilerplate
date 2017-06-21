@@ -10,9 +10,9 @@
 # Webserver
 
 # General
-WEB_DOCUMENT_ROOT=/app/web/
+WEB_DOCUMENT_ROOT=/app/htdocs/
 WEB_DOCUMENT_INDEX=index.php
-CLI_SCRIPT=php /app/web/typo3/cli_dispatch.phpsh
+CLI_SCRIPT=php /app/htdocs/typo3/cli_dispatch.phpsh
 
 #######################################
 # PHP settings
