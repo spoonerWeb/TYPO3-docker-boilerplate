@@ -65,7 +65,7 @@ build:
 	bash bin/build.sh
 
 clean:
-	test -d app/typo3temp && { rm -rf app/typo3temp/*; }
+	test -d app/htdocs/typo3temp && { rm -rf app/htdocs/typo3temp/*; }
 
 bash: shell
 
@@ -80,7 +80,7 @@ root:
 #############################
 
 scheduler:
-	docker exec -it $$(docker-compose ps -q app) typo3/cli_dispatch.phpsh scheduler $(ARGS)
+	docker exec -it $$(docker-compose ps -q app) htdocs/typo3/cli_dispatch.phpsh scheduler $(ARGS)
 
 #############################
 # UHOH
