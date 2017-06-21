@@ -1,0 +1,3 @@
+[submodule "app"]
+	path = app
+	url = ssh://review.uni-hohenheim.de:29418/tambora
